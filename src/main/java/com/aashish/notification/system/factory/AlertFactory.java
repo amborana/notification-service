@@ -16,7 +16,6 @@ public class AlertFactory {
             case SYSTEM   -> new SystemAlert(channel);
             case BUSINESS -> new BusinessAlert(channel);
             case SECURITY -> new SecurityAlert(channel);
-            default -> throw new IllegalArgumentException("Invalid Alert type provided: " + alertType);
         };
     }
 }
